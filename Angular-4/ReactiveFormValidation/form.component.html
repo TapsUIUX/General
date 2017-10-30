@@ -1,0 +1,33 @@
+        
+        <!---- Author Taps -------->
+        
+        <form class="form-group  col-xs-12" name="userform" [formGroup]="userform" novalidate (ngSubmit)="userform.valid && onSubmit(userform.value)">
+
+                <div class="form-group">
+                    <label for="username"> User Name </label>
+                    <input type="text" #sss class="form-control" name="username" formControlName="userName" placeholder="user name">
+
+                    <p *ngIf="userform.controls['userName'].hasError('required')"><b class="text-warning"> name required </b></p>
+
+                    <p *ngIf="userform.controls['userName'].hasError('minlength')"><b class="text-warning"> minimun length is 4 </b></p>
+
+                    <p *ngIf="userform.controls['userName'].hasError('maxlength')"><b class="text-warning"> maximum length is 10 </b></p>
+
+                    <p *ngIf="userform.controls['userName'].valid"><b class="text-success"> correct </b></p>
+
+
+                </div>
+
+
+                <button class="btn btn-primary btn-lg" type="submit" [disabled]="userform.invalid"> submit </button>
+                <!--   <button class="btn btn-primary btn-lg"   type="submit"  > submit </button>-->
+
+                <h4>
+                    <p *ngIf="userform.valid" class="text-success  "> Ready to go </p>
+                </h4>
+                <h4>
+                    <p *ngIf="userform.invalid" class="text-success  "> You can't submit an invalid form </p>
+                </h4>
+
+
+            </form>
