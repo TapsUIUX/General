@@ -1,0 +1,55 @@
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "jest.autoRun": {
+    "watch": false
+  },
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggest.showWords": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.parameterHints.enabled": false,
+  "window.zoomLevel": 2,
+  "editor.hover.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.defaultColorDecorators": true,
+  "livePreview.customExternalBrowser": "Chrome",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.NoBrowser": true,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.inlayHints.enabled": "off",
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true, 
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "keyword",
+          "storage.modifier",
+          "storage.type.class.js",
+          "storage.type.js"
+        ],
+        "settings": {
+          "fontStyle": "italic bold"
+        }
+      },
+      {
+        "scope": [
+          "keyword.control.conditional",
+          "keyword.operator"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "workbench.colorTheme": "One Monokai",
+}
