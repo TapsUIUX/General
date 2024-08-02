@@ -1,3 +1,8 @@
+
+/****
+install Fira Code from Google font 
+install monokai dark theame.
+****/
 {
   "editor.formatOnSave": true,
   "[javascript]": {
